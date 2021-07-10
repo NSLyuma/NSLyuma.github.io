@@ -1,1 +1,2 @@
-# NSLyuma.github.io
+Интернет-магазин на HTML + SASS.
+Учебный проект Geekbrains.

@@ -1,0 +1,267 @@
+.cart
+    padding-top: 96px
+    padding-bottom: 128px
+    display: flex
+    justify-content: space-between
+
+    &__buttons
+        margin-top: 72px
+        display: flex
+        justify-content: space-between
+
+    &__button
+        border: 1px solid #A4A4A4
+        background-color: #fff
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #000
+        padding: 16px 38px
+        transition: color, background-color .3s
+        text-transform: uppercase
+
+        &:hover
+            background-color: #a4a4a4
+            color: #fff
+
+    &__right
+        display: flex
+        flex-direction: column
+        width: 360px
+
+.card
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+    width: 652px
+    max-height: 306px
+    display: flex
+    position: relative
+
+    &:not(:last-child)
+        margin-bottom: 40px
+
+    &__img, &__description
+        max-width: 262px
+
+    &__description
+        padding: 22px 32px
+
+    &__heading
+        font-size: 24px
+        line-height: 29px
+        font-weight: 400
+        color: #222222
+        margin-bottom: 42px
+
+    &__option
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+
+        & span
+            color: $colorSelect
+
+        &:not(:last-child)
+            margin-bottom: 6px
+
+    &__quantity
+        width: 40px
+        padding: 0 2px
+        text-align: center
+        border: 1px solid #EAEAEA
+        font-size: 18px
+        line-height: 22px
+        color: #656565
+        margin-left: 24px
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button
+            -webkit-appearance: none
+
+    &__close
+        position: absolute
+        top: 28px
+        right: 22px
+        cursor: pointer
+
+.buy
+    display: flex
+    flex-direction: column
+
+    &__heading, &__input
+        margin-bottom: 20px
+
+    &__heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222
+
+    &__input
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #222
+        padding: 12px 16px
+        border: 1px solid #A4A4A4
+
+        &:last-child
+            margin-bottom: 24px
+
+        &_light
+            color: #B1B1B1
+
+    &__button
+        border: 1px solid #A4A4A4
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        transition: color, background-color .3s
+        padding: 10px 14px
+        align-self: flex-start
+        text-transform: uppercase
+
+        &:hover
+            color: #fff
+            background-color: #4A4A4A
+
+    &__result
+        background-color: #F5F3F3
+        margin-top: 58px
+        padding: 40px 44px 42px
+        text-align: right
+
+    &__sub
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        margin-bottom: 12px
+
+    &__grand
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222
+
+    &__price
+        margin-left: 20px
+
+        &_colored
+            color: $colorSelect
+            font-weight: 600
+
+    &__border
+        height: 1px
+        width: 275px
+        background-color: #E2E2E2
+        margin-top: 21px
+        margin-bottom: 17px
+
+    &__checkout
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFF
+        background-color: $colorSelect
+        padding: 16px 16px
+        transition: background-color .3s
+        text-align: center
+        display: block
+
+        &:hover
+            background-color: $colorSelect - #111
+
+@media (max-width: 1025px)
+    .cart
+        padding-top: 56px
+        flex-direction: column
+
+        &__left
+            margin-bottom: 64px
+
+        &__right
+            flex-direction: row
+            justify-content: space-between
+            width: 100%
+
+    .card
+        width: 734px
+
+    .buy
+        width: 50%
+        margin-right: 8px
+
+        &__result
+            width: 50%
+            margin: 38px 0 0 8px
+            height: auto
+
+@media (max-width: 769px)
+    .card
+        width: 100%
+
+    .buy
+        &__border
+            width: 100%
+
+@media (max-width: 545px)
+    .card
+        max-height: 188px
+
+        &__img
+            max-width: 144px
+
+        &__description
+            padding: 13px 30px 13px 17px
+
+        &__heading
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 26px
+
+        &__option
+            font-size: 14px
+            line-height: 17px
+
+            &:not(:last-child)
+                margin-bottom: 4px
+
+        &__close
+            width: 10px
+            height: 10px
+            top: 17px
+            right: 12px
+
+@media (max-width: 426px)
+    .page-name_mod
+        padding-top: 50px
+
+    .cart
+        padding-bottom: 96px
+
+        &__button
+            font-size: 12px
+            line-height: 14px
+            padding: 8px 24px
+            text-transform: none
+
+        &__right
+            flex-direction: column
+
+    .buy
+        width: 100%
+
+        &__button
+            text-transform: none
+
+        &__result
+            width: 100%
+            margin: 48px 0 0 0
+
+@media (max-width: 321px)
+    .card
+        &__heading
+            margin-bottom: 10px
+
+        &__quantity
+            margin-left: 6px

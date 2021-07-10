@@ -1,1 +1,1 @@
-Учебный проект Geekbrains. Ссылка: NSLyuma.github.io
+Учебный проект Geekbrains.
